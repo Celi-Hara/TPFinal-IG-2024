@@ -1,0 +1,16 @@
+Primera parte: investigación
+
+Temática principal: Studio Ghibli
+
+Páginas y textos ya existentes
+Página oficial en japonés: https://www.ghibli.jp/
+Contiene en japonés las últimas noticias sobre el estudio, eventos, bibliografías, su historia y cronología, lista de obras, preguntas frecuentes y lista de links a otros sitios, entre otros.
+Página estadounidense de Studio Ghibli Collection: https://ghiblicollection.com/
+No es una página oficial del estudio, sino una creada por GKids, una empresa que vende los Blu-rays de las películas del Studio Ghibli. Contiene la lista de películas con información básica y el link al tráiler doblado, además de poder comprar sus productos.
+Si bien se puede buscar la información sobre el estudio en Wikipedia, no hay ninguna página en español que recopile y muestre la lista de películas de una forma más visual. Para las sinopsis de cada película, también hay que ir a cada artículo de Wikipedia por separado.
+
+Target
+La página estaría dedicada para todas aquellas personas que recién empiezan a conocer el estudio y quieren saber más sobre el mismo, o que conocían el estudio desde antes pero nunca se habían preguntado sobre otras obras además de las más conocidas. Por el tipo de contenido, el rango etario de los usuarios es de adolescentes para arriba, ya que no serán datos comprensibles por niños. Estaría dirigida más para los padres que quieren buscar otras películas de Ghibli para sus hijos, o fans del estudio que quieren ver la información organizada.
+
+Objetivos comunicacionales
+El objetivo principal es proveer a los usuarios información sobre cada uno de sus obras, como la sinopsis, año de estreno y director de cada uno. Además, contendrá información sobre el estudio en sí, para aquellos fanáticos que se interesen más allá de sus obras, con secciones como la historia y cronología del estudio y perfiles de sus directores.
