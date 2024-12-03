@@ -14,3 +14,24 @@ La página estaría dedicada para todas aquellas personas que recién empiezan a
 
 Objetivos comunicacionales
 El objetivo principal es proveer a los usuarios información sobre cada uno de sus obras, como la sinopsis, año de estreno y director de cada uno. Además, contendrá información sobre el estudio en sí, para aquellos fanáticos que se interesen más allá de sus obras, con secciones como la historia y cronología del estudio y perfiles de sus directores.
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+Segunda parte: mapa de navegación y contenidos
+Debe tener una página de inicio, 6 secciones principales, 6 subsecciones o subpáginas y 2 páginas complementarias (formulario de contacto y perfil del alumno), galerías de fotos, juego de complejidad media/alta y funcionalidades JavaScript originales.
+1.	Página de inicio
+2.	Noticias (estrenos, eventos, etc)
+3.	Lista de películas
+    a.	Una subpágina por película que contiene información sobre la misma (27 subpáginas)
+4.	Sobre el estudio
+    a.	Historia	
+    b.	Cronología
+    c.	Premios y Nominaciones
+5.	Creadores destacados
+    a.	Miyazaki Hayao
+    b.	Takahata Isao
+    c.	Hisaishi Joe
+6.	Preguntas frecuentes/trivias
+7.	Página del juego (juego de memoria con varios niveles de dificultad)
+8.	Formulario de contacto
+9.	Información del desarrollador
