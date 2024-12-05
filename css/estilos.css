@@ -8,6 +8,7 @@ body {
     margin: 56px 0 0 0;
     padding: 0;
     font-size: 18px;
+    text-align: justify;
 }
 
 #contenedor {
@@ -18,24 +19,55 @@ body {
     padding: 1.5em;
 }
 
-.tabla-noticias {
-    padding-left: 10px;
+/* Estilos para el título y su fondo */
+.bg-image {
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.bg-image img {
+    width: 150%;
+}
+
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Capa negra semitransparente */
+    color: #fff; /* Color del texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* Estilos para el footer */
 footer {
     color: #FFFFFF;
     font-size: 0.8em;
     background-color: blue;
     text-align: center;
     width: 100%;
-    padding: 20px 0;
+    padding: 20px;
 }
 
 footer a {
     text-decoration: none;
 }
 
-/* Estilos para la sección de banners en la página de inicio */
+/* Estilos para la página de inicio */
+/* Tabla de noticias */
+.tabla-noticias {
+    padding-left: 10px;
+}
+
+/* Sección de banners */
 #contenedor .container-fluid {
     padding: 0; /* Quita el padding para que los banners ocupen el 100% del ancho */
 }
@@ -73,6 +105,67 @@ footer a {
     z-index: 0;    /* Capa detrás del texto */
 }
 
+/* Estilos para la página de noticias */
+.crop-text-2 {
+    -webkit-line-clamp: 2;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+
+/* Estilos para la página de obras */
+.copyright, .ficha-tecnica {
+    text-align: left;
+    word-break: normal;
+}
+
+.ficha-tecnica {
+    font-size: 0.85em;
+}
+
+.ficha-tecnica th, .ficha-tecnica td {
+    background-color: transparent;
+}
+
+span {
+    font-size: 0.8em;
+    color: gray;
+}
+
+.row img{
+	width: 100%;
+    border-radius: 10px;
+}
+
+iframe {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: none;
+}
+
+.contenedor-carousel {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
 
 /* Estilos para versión desktop */
-@media (min-width: 480px) {}
+@media (min-width: 576px) {
+    .bg-image {
+        height: 250px;
+    }
+    .bg-image img {
+        width: 100%;
+    }
+
+    /* Estilos para la página de obras */
+    .modal-body {
+        font-size: 0.9em;
+    }
+}
