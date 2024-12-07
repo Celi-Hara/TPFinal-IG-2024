@@ -80,7 +80,7 @@
         <article>
             <section><!--Título de la página-->
                 <div class="bg-image position-relative">
-                    <img src="img/fondos/chihiro1.jpg">
+                    <img src="img/fondos/chihiro1.jpg" alt="Imagen de fondo del título de la página">
                     <div class="mask ">
                         <h1>Obras del Studio Ghibli</h1>
                     </div>
@@ -89,7 +89,7 @@
 
             <div id="contenedor">
                 <section>
-                    <div class="dropdown-center">
+                    <div class="dropdown-center text-center">
                         <p>Filtrar por director</p>
                         <select name="dropdownMenuLink" id="dropdownMenuLink" class="btn btn-dark">
                             <option value="todos">Todos</option>
@@ -99,31 +99,31 @@
                         </select>
                     </div>
                     <br>
-                    <div class="container-fluid">
-                        <div class="row row-cols-sm-2 row-cols-md-5 g-3"> <!-- 2 columnas para celular y 5 para compu-->
+                    <div class="container-fluid paginaobras">
+                        <div class="row row-cols-2 row-cols-md-5 g-3"> <!-- 2 columnas para celular y 5 para compu-->
 
                             <!-- Acá empieza una película -->
-                            <!-- Obra 28 -->
+                            <!-- Obra 27 -->
                             <div class="col todos miyazaki">
                                 <div class="card mb-3 box-shadow h-100">
                                     <!-- Póster de la película que al ser clickeado, salta el modal-->
                                     <img class="card-img-top" src="img/obras/kimitachi.jpg"
                                         alt="Póster de la película 'El Niño y la Garza'" data-bs-toggle="modal"
-                                        data-bs-target="#obra28">
+                                        data-bs-target="#obra27">
 
                                     <!-- Tarjeta debajo del póster con info del título y el año de estreno-->
-                                    <div class="card-body">
-                                        <p class="card-text text-center"><b>El Niño y la Garza</b><br>2023</p>
+                                    <div class="card-body d-flex align-items-center">
+                                        <p class="card-text text-center w-100"><b>El Niño y la Garza</b><br>2023</p>
                                     </div>
                                 </div>
 
                                 <!-- Modal con info sobre la película -->
-                                <div class="modal fade" id="obra28" data-bs-backdrop="static" tabindex="-1"
-                                    aria-labelledby="obra28Label" aria-hidden="true">
+                                <div class="modal fade" id="obra27" data-bs-backdrop="static" tabindex="-1"
+                                    aria-labelledby="obra27Label" aria-hidden="true">
                                     <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h2 class="modal-title fs-5" id="obra28Label">El Niño y la Garza</h2>
+                                                <h2 class="modal-title fs-5" id="obra27Label">El Niño y la Garza (2023)</h2>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
@@ -136,15 +136,8 @@
                                                             Ghibli</span></p>
                                                 </div>
                                                 <div class="col-md-8">
-                                                    <p>
                                                     <h6>Sinopsis</h6>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                                    culpa qui officia deserunt mollit anim id est laborum.<br><br>
+                                                    <p>Mahito, un joven marcado por la pérdida de su madre, se muda al campo con su padre durante la Segunda Guerra Mundial. En este nuevo entorno, descubre una garza parlante que lo guía hacia un misterioso mundo mágico. A medida que se adentra en este lugar lleno de maravillas y peligros, Mahito se enfrenta a secretos profundos y desafíos que pondrán a prueba su valentía y su deseo de entender el pasado.<br><br>
                                                     <a href="elninoylagarza.html">Ver trailer, capturas y ficha
                                                         técnica</a></p>
                                                 </div>
@@ -155,48 +148,511 @@
                             </div> <!-- Hasta acá es una película-->
 
                             <!-- Acá empieza una película -->
-                            <!-- Obra 27 -->
+                            <!-- Obra 26 -->
+                            <div class="col todos otros">
+                                <div class="card mb-3 box-shadow h-100">
+                                    <!-- Póster de la película que al ser clickeado, salta el modal-->
+                                    <img class="card-img-top" src="img/obras/aya.jpg"
+                                        alt="Póster de la película 'Earwig y la Bruja'" data-bs-toggle="modal"
+                                        data-bs-target="#obra26">
+
+                                    <!-- Tarjeta debajo del póster con info del título y el año de estreno-->
+                                    <div class="card-body d-flex align-items-center">
+                                        <p class="card-text text-center w-100"><b>Earwig y la Bruja</b><br>2020</p>
+                                    </div>
+                                </div>
+
+                                <!-- Modal con info sobre la película -->
+                                <div class="modal fade" id="obra26" data-bs-backdrop="static" tabindex="-1"
+                                    aria-labelledby="obra26Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 class="modal-title fs-5" id="obra26Label">Earwig y la Bruja (2020)</h2>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body row row-cols-sm-1 row-cols-sm-2 align-middle">
+                                                <!-- Muestra el contenido en 1 columna en celular y 2 en desktop-->
+                                                <div class="col-md-4">
+                                                    <img class="img-fluid rounded m-md-1" src="img/obras/aya.jpg"
+                                                        alt="Póster de la película 'Earwig y la Bruja'">
+                                                    <p class="copyright"><span>© 2020 NHK, NEP, Studio Ghibli</span></p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <h6>Sinopsis</h6>
+                                                    <p>Earwig es una niña audaz y decidida que creció en un orfanato, convencida de que puede manipular cualquier situación a su favor. Pero su vida da un giro inesperado cuando es adoptada por una misteriosa pareja: una bruja y un hombre peculiar. Ahora, en una casa repleta de magia y secretos, Earwig deberá usar su astucia y curiosidad para desentrañar los misterios que la rodean y descubrir su propio poder.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Hasta acá es una película-->
+
+                            <!-- Acá empieza una película -->
+                            <!-- Obra 25 -->
+                            <div class="col todos otros">
+                                <div class="card mb-3 box-shadow h-100">
+                                    <!-- Póster de la película que al ser clickeado, salta el modal-->
+                                    <img class="card-img-top" src="img/obras/red-turtle.jpg"
+                                        alt="Póster de la película 'La Tortuga Roja'" data-bs-toggle="modal"
+                                        data-bs-target="#obra25">
+
+                                    <!-- Tarjeta debajo del póster con info del título y el año de estreno-->
+                                    <div class="card-body d-flex align-items-center">
+                                        <p class="card-text text-center w-100"><b>La Tortuga Roja</b><br>2016</p>
+                                    </div>
+                                </div>
+
+                                <!-- Modal con info sobre la película -->
+                                <div class="modal fade" id="obra25" data-bs-backdrop="static" tabindex="-1"
+                                    aria-labelledby="obra25Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 class="modal-title fs-5" id="obra25Label">La Tortuga Roja (2016)</h2>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body row row-cols-sm-1 row-cols-sm-2 align-middle">
+                                                <!-- Muestra el contenido en 1 columna en celular y 2 en desktop-->
+                                                <div class="col-md-4">
+                                                    <img class="img-fluid rounded m-md-1" src="img/obras/red-turtle.jpg"
+                                                        alt="Póster de la película 'La Tortuga Roja'">
+                                                    <p class="copyright"><span>© 2016 Studio Ghibli - Wild Bunch - Why Not Productions - Arte France Cinéma - CN4 Productions - Belvision - Nippon Television Network - Dentsu - Hakuhodo DYMP - Walt Disney Japan - Mitsubishi - Toho</span></p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <h6>Sinopsis</h6>
+                                                    <p>Tras naufragar en una isla desierta, un hombre lucha por sobrevivir rodeado de naturaleza salvaje. Pero su vida cambia cuando encuentra a una misteriosa tortuga roja que parece frustrar cada intento de escapar. A medida que el tiempo pasa, se forja un vínculo inesperado entre el hombre y la isla, llevándolo a una reflexión profunda sobre la vida, la soledad y la conexión con el mundo natural.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Hasta acá es una película-->
+
+                            <!-- Acá empieza una película -->
+                            <!-- Obra 24 -->
+                            <div class="col todos otros">
+                                <div class="card mb-3 box-shadow h-100">
+                                    <!-- Póster de la película que al ser clickeado, salta el modal-->
+                                    <img class="card-img-top" src="img/obras/marnie.jpg"
+                                        alt="Póster de la película 'El Recuerdo de Marnie'" data-bs-toggle="modal"
+                                        data-bs-target="#obra24">
+
+                                    <!-- Tarjeta debajo del póster con info del título y el año de estreno-->
+                                    <div class="card-body d-flex align-items-center">
+                                        <p class="card-text text-center w-100"><b>El Recuerdo de Marnie</b><br>2014</p>
+                                    </div>
+                                </div>
+
+                                <!-- Modal con info sobre la película -->
+                                <div class="modal fade" id="obra24" data-bs-backdrop="static" tabindex="-1"
+                                    aria-labelledby="obra24Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 class="modal-title fs-5" id="obra24Label">El Recuerdo de Marnie (2014)</h2>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body row row-cols-sm-1 row-cols-sm-2 align-middle">
+                                                <!-- Muestra el contenido en 1 columna en celular y 2 en desktop-->
+                                                <div class="col-md-4">
+                                                    <img class="img-fluid rounded m-md-1" src="img/obras/marnie.jpg"
+                                                        alt="Póster de la película 'El Recuerdo de Marnie'">
+                                                    <p class="copyright"><span>© 2014 Joan G. Robinson/Keiko Niwa/Studio Ghibli, NDHDMTK</span></p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <h6>Sinopsis</h6>
+                                                    <p>Anna es una niña tímida y solitaria que, debido a problemas de salud, pasa el verano en un tranquilo pueblo costero. Allí, mientras explora los paisajes llenos de misterio, descubre una vieja mansión junto al lago y conoce a Marnie, una chica enigmática con quien forma una conexión profunda y especial. Pero Marnie parece guardar secretos que Anna no logra entender del todo.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Hasta acá es una película-->
+
+                            <!-- Acá empieza una película -->
+                            <!-- Obra 23 -->
                             <div class="col todos takahata">
-                                <div class="card mb-3 box-shadow">
+                                <div class="card mb-3 box-shadow h-100">
                                     <!-- Póster de la película que al ser clickeado, salta el modal-->
-                                    <img class="card-img-top" src="img/obras/kimitachi.jpg"
-                                        alt="Póster de la película 'El Niño y la Garza'" data-bs-toggle="modal"
-                                        data-bs-target="#obra28">
+                                    <img class="card-img-top" src="img/obras/kaguyahime.jpg"
+                                        alt="Póster de la película 'El Cuento de la Princesa Kaguya'" data-bs-toggle="modal"
+                                        data-bs-target="#obra23">
 
                                     <!-- Tarjeta debajo del póster con info del título y el año de estreno-->
-                                    <div class="card-body">
-                                        <p class="card-text text-center"><b>El Niño y la Garza</b><br>2023</p>
+                                    <div class="card-body d-flex align-items-center">
+                                        <p class="card-text text-center w-100"><b>El Cuento de la Princesa Kaguya</b><br>2013</p>
                                     </div>
                                 </div>
 
                                 <!-- Modal con info sobre la película -->
-                                <div class="modal fade" id="obra28" data-bs-backdrop="static" tabindex="-1"
-                                    aria-labelledby="obra28Label" aria-hidden="true">
+                                <div class="modal fade" id="obra23" data-bs-backdrop="static" tabindex="-1"
+                                    aria-labelledby="obra23Label" aria-hidden="true">
                                     <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h2 class="modal-title fs-5" id="obra28Label">El Niño y la Garza</h2>
+                                                <h2 class="modal-title fs-5" id="obra23Label">El Cuento de la Princesa Kaguya (2013)</h2>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body row row-cols-sm-1 row-cols-sm-2 align-middle">
                                                 <!-- Muestra el contenido en 1 columna en celular y 2 en desktop-->
                                                 <div class="col-md-4">
-                                                    <img class="img-fluid rounded m-md-1" src="img/obras/kimitachi.jpg"
-                                                        alt="Póster de la película 'El Niño y la Garza'">
-                                                    <p class="copyright"><span>© 2023 Hayao Miyazaki/Studio
-                                                            Ghibli</span></p>
+                                                    <img class="img-fluid rounded m-md-1" src="img/obras/kaguyahime.jpg"
+                                                        alt="Póster de la película 'El Cuento de la Princesa Kaguya'">
+                                                    <p class="copyright"><span>© 2013 Isao Takahata, Riko Sakaguchi/Studio Ghibli, NDHDMTK</span></p>
                                                 </div>
                                                 <div class="col-md-8">
-                                                    <p>
                                                     <h6>Sinopsis</h6>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                                    culpa qui officia deserunt mollit anim id est laborum.<br><br>
+                                                    <p>Un humilde campesino encuentra un misterioso tallo de bambú que brilla, y dentro de él, a una pequeña niña que decide criar junto a su esposa como su propia hija. La niña, llamada Kaguya, crece rápidamente y se convierte en una joven de extraordinaria belleza, atrayendo la atención de nobles y del propio emperador. Pero Kaguya guarda un secreto sobre su verdadero origen, mientras busca entender su lugar en el mundo.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Hasta acá es una película-->
+
+                            <!-- Acá empieza una película -->
+                            <!-- Obra 22 -->
+                            <div class="col todos miyazaki">
+                                <div class="card mb-3 box-shadow h-100">
+                                    <!-- Póster de la película que al ser clickeado, salta el modal-->
+                                    <img class="card-img-top" src="img/obras/kazetachinu.jpg"
+                                        alt="Póster de la película 'Se Levanta el Viento'" data-bs-toggle="modal"
+                                        data-bs-target="#obra22">
+
+                                    <!-- Tarjeta debajo del póster con info del título y el año de estreno-->
+                                    <div class="card-body d-flex align-items-center">
+                                        <p class="card-text text-center w-100"><b>Se Levanta el Viento</b><br>2013</p>
+                                    </div>
+                                </div>
+
+                                <!-- Modal con info sobre la película -->
+                                <div class="modal fade" id="obra22" data-bs-backdrop="static" tabindex="-1"
+                                    aria-labelledby="obra22Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 class="modal-title fs-5" id="obra22Label">Se Levanta el Viento (2013)</h2>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body row row-cols-sm-1 row-cols-sm-2 align-middle">
+                                                <!-- Muestra el contenido en 1 columna en celular y 2 en desktop-->
+                                                <div class="col-md-4">
+                                                    <img class="img-fluid rounded m-md-1" src="img/obras/kazetachinu.jpg"
+                                                        alt="Póster de la película 'Se Levanta el Viento'">
+                                                    <p class="copyright"><span>© 2013 Hayao Miyazaki/Studio Ghibli, NDHDMTK</span></p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <h6>Sinopsis</h6>
+                                                    <p>Jirō, un joven apasionado por la aviación, sueña con diseñar aviones que puedan conquistar los cielos. A través de los desafíos de la vida en Japón durante el siglo XX, incluyendo terremotos, guerras y la adversidad personal, Jirō persigue su sueño mientras navega por el amor y las decisiones que marcarán su destino.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Hasta acá es una película-->
+
+                            <!-- Acá empieza una película -->
+                            <!-- Obra 21 -->
+                            <div class="col todos otros">
+                                <div class="card mb-3 box-shadow h-100">
+                                    <!-- Póster de la película que al ser clickeado, salta el modal-->
+                                    <img class="card-img-top" src="img/obras/kokurikozaka.jpg"
+                                        alt="Póster de la película 'La Colina de las Amapolas'" data-bs-toggle="modal"
+                                        data-bs-target="#obra21">
+
+                                    <!-- Tarjeta debajo del póster con info del título y el año de estreno-->
+                                    <div class="card-body d-flex align-items-center">
+                                        <p class="card-text text-center w-100"><b>La Colina de las Amapolas</b><br>2011</p>
+                                    </div>
+                                </div>
+
+                                <!-- Modal con info sobre la película -->
+                                <div class="modal fade" id="obra21" data-bs-backdrop="static" tabindex="-1"
+                                    aria-labelledby="obra21Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 class="modal-title fs-5" id="obra21Label">La Colina de las Amapolas (2011)</h2>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body row row-cols-sm-1 row-cols-sm-2 align-middle">
+                                                <!-- Muestra el contenido en 1 columna en celular y 2 en desktop-->
+                                                <div class="col-md-4">
+                                                    <img class="img-fluid rounded m-md-1" src="img/obras/kokurikozaka.jpg"
+                                                        alt="Póster de la película 'La Colina de las Amapolas'">
+                                                    <p class="copyright"><span>© 2011 Chizuru Takahashi, Tetsuro Sayama/Keiko Niwa/Studio Ghibli, NDHDMT</span></p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <h6>Sinopsis</h6>
+                                                    <p>Umi, una joven que vive en Yokohama, cuida de su familia mientras su padre, un marinero, está ausente. Un día, conoce a Shun, un chico de su escuela que también se interesa por la historia de su familia. Juntos se unen para salvar el Club de la Colina, un viejo edificio que está a punto de ser demolido. Mientras luchan por preservar el lugar, ambos descubren secretos sobre sus pasados y desarrollan una amistad profunda.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Hasta acá es una película-->
+
+                            <!-- Acá empieza una película -->
+                            <!-- Obra 20 -->
+                            <div class="col todos otros">
+                                <div class="card mb-3 box-shadow h-100">
+                                    <!-- Póster de la película que al ser clickeado, salta el modal-->
+                                    <img class="card-img-top" src="img/obras/karigurashi.jpg"
+                                        alt="Póster de la película 'El Mundo Secreto de Arriety'" data-bs-toggle="modal"
+                                        data-bs-target="#obra20">
+
+                                    <!-- Tarjeta debajo del póster con info del título y el año de estreno-->
+                                    <div class="card-body d-flex align-items-center">
+                                        <p class="card-text text-center w-100"><b>El Mundo Secreto de Arriety</b><br>2010</p>
+                                    </div>
+                                </div>
+
+                                <!-- Modal con info sobre la película -->
+                                <div class="modal fade" id="obra20" data-bs-backdrop="static" tabindex="-1"
+                                    aria-labelledby="obra20Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 class="modal-title fs-5" id="obra20Label">El Mundo Secreto de Arriety (2010)</h2>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body row row-cols-sm-1 row-cols-sm-2 align-middle">
+                                                <!-- Muestra el contenido en 1 columna en celular y 2 en desktop-->
+                                                <div class="col-md-4">
+                                                    <img class="img-fluid rounded m-md-1" src="img/obras/karigurashi.jpg"
+                                                        alt="Póster de la película 'El Mundo Secreto de Arriety'">
+                                                    <p class="copyright"><span>© 2010 Mary Norton/Keiko Niwa/Studio Ghibli, NDHDMTW</span></p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <h6>Sinopsis</h6>
+                                                    <p>Arrietty es una pequeña niña que vive con su familia en una casa escondida bajo el suelo, donde los "prestadores" —como ella y sus padres se llaman— toman prestadas pequeñas cosas de los humanos para sobrevivir. Cuando un niño llamado Shō llega a la casa y descubre a Arrietty, su mundo se ve amenazado. A medida que ambos establecen una conexión, enfrentan el riesgo de ser descubiertos y deben encontrar una manera de proteger su forma de vida.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Hasta acá es una película-->
+
+                            <!-- Acá empieza una película -->
+                            <!-- Obra 19 -->
+                            <div class="col todos miyazaki">
+                                <div class="card mb-3 box-shadow h-100">
+                                    <!-- Póster de la película que al ser clickeado, salta el modal-->
+                                    <img class="card-img-top" src="img/obras/ponyo.jpg"
+                                        alt="Póster de la película 'Ponyo y el Secreto de la Sirenita'" data-bs-toggle="modal"
+                                        data-bs-target="#obra19">
+
+                                    <!-- Tarjeta debajo del póster con info del título y el año de estreno-->
+                                    <div class="card-body d-flex align-items-center">
+                                        <p class="card-text text-center w-100"><b>Ponyo y el Secreto de la Sirenita</b><br>2008</p>
+                                    </div>
+                                </div>
+
+                                <!-- Modal con info sobre la película -->
+                                <div class="modal fade" id="obra19" data-bs-backdrop="static" tabindex="-1"
+                                    aria-labelledby="obra19Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 class="modal-title fs-5" id="obra19Label">Ponyo y el Secreto de la Sirenita (2008)</h2>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body row row-cols-sm-1 row-cols-sm-2 align-middle">
+                                                <!-- Muestra el contenido en 1 columna en celular y 2 en desktop-->
+                                                <div class="col-md-4">
+                                                    <img class="img-fluid rounded m-md-1" src="img/obras/ponyo.jpg"
+                                                        alt="Póster de la película 'Ponyo y el Secreto de la Sirenita'">
+                                                    <p class="copyright"><span>© 2008 Hayao Miyazaki/Studio Ghibli, NDHDMT</span></p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <h6>Sinopsis</h6>
+                                                    <p>Sōsuke, un niño de cinco años, encuentra a Ponyo, una extraña criatura que parece una pequeña sirena, atrapada en un frasco. Tras liberarla, descubre que Ponyo tiene el poder de transformar el agua y cambiar el curso de la naturaleza. A medida que la magia de Ponyo crece, el mundo que conocen comienza a alterarse, y tanto Ponyo como Sōsuke deben enfrentarse a los desafíos que surgen para salvar a su familia y restaurar el equilibrio del océano.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Hasta acá es una película-->
+
+                            <!-- Acá empieza una película -->
+                            <!-- Obra 18 -->
+                            <div class="col todos otros">
+                                <div class="card mb-3 box-shadow h-100">
+                                    <!-- Póster de la película que al ser clickeado, salta el modal-->
+                                    <img class="card-img-top" src="img/obras/ged.jpg"
+                                        alt="Póster de la película 'Cuentos de Terramar'" data-bs-toggle="modal"
+                                        data-bs-target="#obra18">
+
+                                    <!-- Tarjeta debajo del póster con info del título y el año de estreno-->
+                                    <div class="card-body d-flex align-items-center">
+                                        <p class="card-text text-center w-100"><b>Cuentos de Terramar</b><br>2006</p>
+                                    </div>
+                                </div>
+
+                                <!-- Modal con info sobre la película -->
+                                <div class="modal fade" id="obra18" data-bs-backdrop="static" tabindex="-1"
+                                    aria-labelledby="obra18Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 class="modal-title fs-5" id="obra18Label">Cuentos de Terramar (2006)</h2>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body row row-cols-sm-1 row-cols-sm-2 align-middle">
+                                                <!-- Muestra el contenido en 1 columna en celular y 2 en desktop-->
+                                                <div class="col-md-4">
+                                                    <img class="img-fluid rounded m-md-1" src="img/obras/ged.jpg"
+                                                        alt="Póster de la película 'Cuentos de Terramar'">
+                                                    <p class="copyright"><span>© 2006 Ursula K. Le Guin/Keiko Niwa/Studio Ghibli, NDHDMT</span></p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <h6>Sinopsis</h6>
+                                                    <p>Un extraño y peligroso fenómeno sacude el reino de Terramar cuando dragones provenientes de tierras lejanas comienzan a aparecer, desafiando el equilibrio entre humanos y dragones. Gavilán, un mago poderoso, investiga el origen de este caos y se encuentra con Arren, un joven príncipe marcado por su pasado y por un lado oscuro que le otorga poder, pero también lo consume con odio y crueldad. Juntos, deben enfrentar la amenaza de Cob, un mago oscuro que busca aprovechar la oscuridad de Arren para sus propios fines.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Hasta acá es una película-->
+
+                            <!-- Acá empieza una película -->
+                            <!-- Obra 17 -->
+                            <div class="col todos miyazaki">
+                                <div class="card mb-3 box-shadow h-100">
+                                    <!-- Póster de la película que al ser clickeado, salta el modal-->
+                                    <img class="card-img-top" src="img/obras/howl.jpg"
+                                        alt="Póster de la película 'El Increíble Castillo Vagabundo'" data-bs-toggle="modal"
+                                        data-bs-target="#obra17">
+
+                                    <!-- Tarjeta debajo del póster con info del título y el año de estreno-->
+                                    <div class="card-body d-flex align-items-center">
+                                        <p class="card-text text-center w-100"><b>El Increíble Castillo Vagabundo</b><br>2004</p>
+                                    </div>
+                                </div>
+
+                                <!-- Modal con info sobre la película -->
+                                <div class="modal fade" id="obra17" data-bs-backdrop="static" tabindex="-1"
+                                    aria-labelledby="obra17Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 class="modal-title fs-5" id="obra17Label">El Increíble Castillo Vagabundo (2004)</h2>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body row row-cols-sm-1 row-cols-sm-2 align-middle">
+                                                <!-- Muestra el contenido en 1 columna en celular y 2 en desktop-->
+                                                <div class="col-md-4">
+                                                    <img class="img-fluid rounded m-md-1" src="img/obras/howl.jpg"
+                                                        alt="Póster de la película 'El Increíble Castillo Vagabundo'">
+                                                    <p class="copyright"><span>© 2004 Diana Wynne Jones/Hayao Miyazaki/Studio Ghibli, NDDMT</span></p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <h6>Sinopsis</h6>
+                                                    <p>Sophie, una joven que es transformada en una anciana por una maldición, huye de su hogar y se encuentra con un castillo ambulante dirigido por el misterioso hechicero Howl. Mientras viaja con él, Sophie descubre un mundo plagado de guerra y magia, y, junto a Howl y sus extraños compañeros, enfrentará desafíos que la llevarán a comprender el verdadero poder de la transformación y el amor.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Hasta acá es una película-->
+
+                            <!-- Acá empieza una película -->
+                            <!-- Obra 16 -->
+                            <div class="col todos otros">
+                                <div class="card mb-3 box-shadow h-100">
+                                    <!-- Póster de la película que al ser clickeado, salta el modal-->
+                                    <img class="card-img-top" src="img/obras/baron.jpg"
+                                        alt="Póster de la película 'El Regreso del Gato'" data-bs-toggle="modal"
+                                        data-bs-target="#obra16">
+
+                                    <!-- Tarjeta debajo del póster con info del título y el año de estreno-->
+                                    <div class="card-body d-flex align-items-center">
+                                        <p class="card-text text-center w-100"><b>El Regreso del Gato</b><br>2002</p>
+                                    </div>
+                                </div>
+
+                                <!-- Modal con info sobre la película -->
+                                <div class="modal fade" id="obra16" data-bs-backdrop="static" tabindex="-1"
+                                    aria-labelledby="obra16Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 class="modal-title fs-5" id="obra16Label">El Regreso del Gato (2002)</h2>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body row row-cols-sm-1 row-cols-sm-2 align-middle">
+                                                <!-- Muestra el contenido en 1 columna en celular y 2 en desktop-->
+                                                <div class="col-md-4">
+                                                    <img class="img-fluid rounded m-md-1" src="img/obras/baron.jpg"
+                                                        alt="Póster de la película 'El Regreso del Gato'">
+                                                    <p class="copyright"><span>© 2002 Aoi Hiiragi/Reiko Yoshida/Studio Ghibli, NDHMT</span></p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <h6>Sinopsis</h6>
+                                                    <p>Haru, una adolescente algo torpe y poco confiada, salva a un gato de ser atropellado, solo para descubrir que el felino es el príncipe del Reino de los Gatos. Como agradecimiento, la familia real felina la invita al reino, pero rápidamente se ve atrapada en un mundo extraño y peligroso, donde es transformada en una gata. Para regresar a su vida humana, Haru debe encontrar la manera de salir de ese mundo antes de que su destino sea sellado para siempre.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Hasta acá es una película-->
+
+                            <!-- Acá empieza una película -->
+                            <!-- Obra 15 -->
+                            <div class="col todos otros">
+                                <div class="card mb-3 box-shadow h-100">
+                                    <!-- Póster de la película que al ser clickeado, salta el modal-->
+                                    <img class="card-img-top" src="img/obras/ghiblies.jpg"
+                                        alt="Póster del corto 'Ghiblies Episodio 2'" data-bs-toggle="modal"
+                                        data-bs-target="#obra15">
+
+                                    <!-- Tarjeta debajo del póster con info del título y el año de estreno-->
+                                    <div class="card-body d-flex align-items-center">
+                                        <p class="card-text text-center w-100"><b>Ghiblies Episodio 2</b><br>2002</p>
+                                    </div>
+                                </div>
+
+                                <!-- Modal con info sobre la película -->
+                                <div class="modal fade" id="obra15" data-bs-backdrop="static" tabindex="-1"
+                                    aria-labelledby="obra15Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 class="modal-title fs-5" id="obra15Label">Ghiblies Episodio 2 (2002)</h2>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body row row-cols-sm-1 row-cols-sm-2 align-middle">
+                                                <!-- Muestra el contenido en 1 columna en celular y 2 en desktop-->
+                                                <div class="col-md-4">
+                                                    <img class="img-fluid rounded m-md-1" src="img/obras/ghiblies.jpg"
+                                                        alt="Póster del corto 'Ghiblies Episodio 2'">
+                                                    <p class="copyright"><span>© 2002 Toshio Suzuki/Studio Ghibli, NDHMT</span></p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <h6>Sinopsis</h6>
+                                                    <p>La película sigue la línea de su predecesora, que trata sobre la vida en el Studio Ghibli, y el director Momose vuelve a dibujar a sus compañeros como parte del reparto. Aunque la película parece experimental y un poco como una broma interna, rinde homenaje al fallecido director de animación y realizador de Ghibli Yoshifumi Kondō y a su comic publicado en Animage.<br><br>
+                                                    Episodios:
+                                                    <ol>
+                                                        <li>Una Increíble Confrontación</li>
+                                                        <li>Primer Amor</li>
+                                                        <li>Mediodía (historia corta)</li>
+                                                        <li>Baile (historia corta)</li>
+                                                        <li>La Bella y la Bestia (historia corta)</li>
+                                                        <li>Epílogo (historia corta)</li>
+                                                    </ol>
                                                     <a href="elninoylagarza.html">Ver trailer, capturas y ficha
                                                         técnica</a></p>
                                                 </div>
@@ -207,50 +663,40 @@
                             </div> <!-- Hasta acá es una película-->
 
                             <!-- Acá empieza una película -->
-                            <!-- Obra 26 -->
-                            <div class="col todos otros">
-                                <div class="card mb-3 box-shadow">
+                            <!-- Obra 14 -->
+                            <div class="col todos miyazaki">
+                                <div class="card mb-3 box-shadow h-100">
                                     <!-- Póster de la película que al ser clickeado, salta el modal-->
-                                    <img class="card-img-top" src="img/obras/kimitachi.jpg"
-                                        alt="Póster de la película 'El Niño y la Garza'" data-bs-toggle="modal"
-                                        data-bs-target="#obra28">
+                                    <img class="card-img-top" src="img/obras/chihiro.jpg"
+                                        alt="Póster de la película 'El Viaje de Chihiro'" data-bs-toggle="modal"
+                                        data-bs-target="#obra14">
 
                                     <!-- Tarjeta debajo del póster con info del título y el año de estreno-->
-                                    <div class="card-body">
-                                        <p class="card-text text-center"><b>El Niño y la Garza</b><br>2023</p>
+                                    <div class="card-body d-flex align-items-center">
+                                        <p class="card-text text-center w-100"><b>El Viaje de Chihiro</b><br>2001</p>
                                     </div>
                                 </div>
 
                                 <!-- Modal con info sobre la película -->
-                                <div class="modal fade" id="obra28" data-bs-backdrop="static" tabindex="-1"
-                                    aria-labelledby="obra28Label" aria-hidden="true">
+                                <div class="modal fade" id="obra14" data-bs-backdrop="static" tabindex="-1"
+                                    aria-labelledby="obra14Label" aria-hidden="true">
                                     <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h2 class="modal-title fs-5" id="obra28Label">El Niño y la Garza</h2>
+                                                <h2 class="modal-title fs-5" id="obra14Label">El Viaje de Chihiro (2001)</h2>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body row row-cols-sm-1 row-cols-sm-2 align-middle">
                                                 <!-- Muestra el contenido en 1 columna en celular y 2 en desktop-->
                                                 <div class="col-md-4">
-                                                    <img class="img-fluid rounded m-md-1" src="img/obras/kimitachi.jpg"
-                                                        alt="Póster de la película 'El Niño y la Garza'">
-                                                    <p class="copyright"><span>© 2023 Hayao Miyazaki/Studio
-                                                            Ghibli</span></p>
+                                                    <img class="img-fluid rounded m-md-1" src="img/obras/chihiro.jpg"
+                                                        alt="Póster de la película 'El Viaje de Chihiro'">
+                                                    <p class="copyright"><span>© 2001 Hayao Miyazaki/Studio Ghibli, NDDTM</span></p>
                                                 </div>
                                                 <div class="col-md-8">
-                                                    <p>
                                                     <h6>Sinopsis</h6>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                                    culpa qui officia deserunt mollit anim id est laborum.<br><br>
-                                                    <a href="elninoylagarza.html">Ver trailer, capturas y ficha
-                                                        técnica</a></p>
+                                                    <p>Chihiro, una niña de 10 años, se encuentra atrapada en un misterioso y mágico mundo cuando sus padres son transformados en cerdos al comer en un restaurante de una extraña estación termal. Para salvarlos y encontrar el camino de regreso a casa, Chihiro debe trabajar en las termas dirigida por espíritus y criaturas sobrenaturales, mientras enfrenta desafíos y descubre secretos ocultos. A lo largo de su viaje, Chihiro aprenderá lecciones de valentía, amistad y la importancia de la transformación personal.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -259,203 +705,544 @@
                             </div> <!-- Hasta acá es una película-->
 
                             <!-- Acá empieza una película -->
-                            <!-- Obra 26 -->
-                            <div class="col todos otros">
-                                <div class="card mb-3 box-shadow">
+                            <!-- Obra 13 -->
+                            <div class="col todos takahata">
+                                <div class="card mb-3 box-shadow h-100">
                                     <!-- Póster de la película que al ser clickeado, salta el modal-->
-                                    <img class="card-img-top" src="img/obras/kimitachi.jpg"
-                                        alt="Póster de la película 'El Niño y la Garza'" data-bs-toggle="modal"
-                                        data-bs-target="#obra28">
+                                    <img class="card-img-top" src="img/obras/yamada.jpg"
+                                        alt="Póster de la película 'Mis Vecinos los Yamada'" data-bs-toggle="modal"
+                                        data-bs-target="#obra13">
 
                                     <!-- Tarjeta debajo del póster con info del título y el año de estreno-->
-                                    <div class="card-body">
-                                        <p class="card-text text-center"><b>El Niño y la Garza</b><br>2023</p>
+                                    <div class="card-body d-flex align-items-center">
+                                        <p class="card-text text-center w-100"><b>Mis Vecinos los Yamada</b><br>1999</p>
                                     </div>
                                 </div>
 
                                 <!-- Modal con info sobre la película -->
-                                <div class="modal fade" id="obra28" data-bs-backdrop="static" tabindex="-1"
-                                    aria-labelledby="obra28Label" aria-hidden="true">
+                                <div class="modal fade" id="obra13" data-bs-backdrop="static" tabindex="-1"
+                                    aria-labelledby="obra13Label" aria-hidden="true">
                                     <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h2 class="modal-title fs-5" id="obra28Label">El Niño y la Garza</h2>
+                                                <h2 class="modal-title fs-5" id="obra13Label">Mis Vecinos los Yamada (1999)</h2>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body row row-cols-sm-1 row-cols-sm-2 align-middle">
                                                 <!-- Muestra el contenido en 1 columna en celular y 2 en desktop-->
                                                 <div class="col-md-4">
-                                                    <img class="img-fluid rounded m-md-1" src="img/obras/kimitachi.jpg"
-                                                        alt="Póster de la película 'El Niño y la Garza'">
-                                                    <p class="copyright"><span>© 2023 Hayao Miyazaki/Studio
-                                                            Ghibli</span></p>
+                                                    <img class="img-fluid rounded m-md-1" src="img/obras/yamada.jpg"
+                                                        alt="Póster de la película 'Mis Vecinos los Yamada'">
+                                                    <p class="copyright"><span>© 1999 Hisaichi Ishii/Isao Takahata/Studio Ghibli, NHD</span></p>
                                                 </div>
                                                 <div class="col-md-8">
-                                                    <p>
                                                     <h6>Sinopsis</h6>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                                    culpa qui officia deserunt mollit anim id est laborum.<br><br>
-                                                    <a href="elninoylagarza.html">Ver trailer, capturas y ficha
-                                                        técnica</a></p>
+                                                    <p>La película sigue a la familia Yamada, una típica familia japonesa que vive situaciones cotidianas con un toque de humor y surrealismo. A través de una serie de episodios breves y cómicos, se muestran las diversas dinámicas familiares, desde las pequeñas disputas hasta los momentos de ternura, todo presentado en un estilo visual único y simple.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div> <!-- Hasta acá es una película-->
+
                             <!-- Acá empieza una película -->
-                            <!-- Obra 26 -->
-                            <div class="col todos otros">
-                                <div class="card mb-3 box-shadow">
+                            <!-- Obra 12 -->
+                            <div class="col todos miyazaki">
+                                <div class="card mb-3 box-shadow h-100">
                                     <!-- Póster de la película que al ser clickeado, salta el modal-->
-                                    <img class="card-img-top" src="img/obras/kimitachi.jpg"
-                                        alt="Póster de la película 'El Niño y la Garza'" data-bs-toggle="modal"
-                                        data-bs-target="#obra28">
+                                    <img class="card-img-top" src="img/obras/mononoke.jpg"
+                                        alt="Póster de la película 'La Princesa Mononoke'" data-bs-toggle="modal"
+                                        data-bs-target="#obra12">
 
                                     <!-- Tarjeta debajo del póster con info del título y el año de estreno-->
-                                    <div class="card-body">
-                                        <p class="card-text text-center"><b>El Niño y la Garza</b><br>2023</p>
+                                    <div class="card-body d-flex align-items-center">
+                                        <p class="card-text text-center w-100"><b>La Princesa Mononoke</b><br>1997</p>
                                     </div>
                                 </div>
 
                                 <!-- Modal con info sobre la película -->
-                                <div class="modal fade" id="obra28" data-bs-backdrop="static" tabindex="-1"
-                                    aria-labelledby="obra28Label" aria-hidden="true">
+                                <div class="modal fade" id="obra12" data-bs-backdrop="static" tabindex="-1"
+                                    aria-labelledby="obra12Label" aria-hidden="true">
                                     <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h2 class="modal-title fs-5" id="obra28Label">El Niño y la Garza</h2>
+                                                <h2 class="modal-title fs-5" id="obra12Label">La Princesa Mononoke (1997)</h2>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body row row-cols-sm-1 row-cols-sm-2 align-middle">
                                                 <!-- Muestra el contenido en 1 columna en celular y 2 en desktop-->
                                                 <div class="col-md-4">
-                                                    <img class="img-fluid rounded m-md-1" src="img/obras/kimitachi.jpg"
-                                                        alt="Póster de la película 'El Niño y la Garza'">
-                                                    <p class="copyright"><span>© 2023 Hayao Miyazaki/Studio
-                                                            Ghibli</span></p>
+                                                    <img class="img-fluid rounded m-md-1" src="img/obras/mononoke.jpg"
+                                                        alt="Póster de la película 'La Princesa Mononoke'">
+                                                    <p class="copyright"><span>© 1997 Hayao Miyazaki/Studio Ghibli, ND</span></p>
                                                 </div>
                                                 <div class="col-md-8">
-                                                    <p>
                                                     <h6>Sinopsis</h6>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                                    culpa qui officia deserunt mollit anim id est laborum.<br><br>
-                                                    <a href="elninoylagarza.html">Ver trailer, capturas y ficha
-                                                        técnica</a></p>
+                                                    <p>Ashitaka, un joven príncipe, es maldecido por un jabalí poseído por un espíritu maligno. En su búsqueda de una cura, llega a un conflicto entre los humanos que explotan los recursos naturales y los espíritus del bosque, liderados por la feroz princesa Mononoke, una joven criada por lobos. Mientras los humanos y los seres sobrenaturales luchan, Ashitaka intenta mediar en la batalla, buscando una solución que evite la destrucción de la naturaleza y la guerra entre ambos mundos.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div> <!-- Hasta acá es una película-->
+
                             <!-- Acá empieza una película -->
-                            <!-- Obra 26 -->
+                            <!-- Obra 11 -->
                             <div class="col todos otros">
-                                <div class="card mb-3 box-shadow">
+                                <div class="card mb-3 box-shadow h-100">
                                     <!-- Póster de la película que al ser clickeado, salta el modal-->
-                                    <img class="card-img-top" src="img/obras/kimitachi.jpg"
-                                        alt="Póster de la película 'El Niño y la Garza'" data-bs-toggle="modal"
-                                        data-bs-target="#obra28">
+                                    <img class="card-img-top" src="img/obras/mimi.jpg"
+                                        alt="Póster de la película 'Susurros del Corazón'" data-bs-toggle="modal"
+                                        data-bs-target="#obra11">
 
                                     <!-- Tarjeta debajo del póster con info del título y el año de estreno-->
-                                    <div class="card-body">
-                                        <p class="card-text text-center"><b>El Niño y la Garza</b><br>2023</p>
+                                    <div class="card-body d-flex align-items-center">
+                                        <p class="card-text text-center w-100"><b>Susurros del Corazón</b><br>1995</p>
                                     </div>
                                 </div>
 
                                 <!-- Modal con info sobre la película -->
-                                <div class="modal fade" id="obra28" data-bs-backdrop="static" tabindex="-1"
-                                    aria-labelledby="obra28Label" aria-hidden="true">
+                                <div class="modal fade" id="obra11" data-bs-backdrop="static" tabindex="-1"
+                                    aria-labelledby="obra11Label" aria-hidden="true">
                                     <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h2 class="modal-title fs-5" id="obra28Label">El Niño y la Garza</h2>
+                                                <h2 class="modal-title fs-5" id="obra11Label">Susurros del Corazón (1995)</h2>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body row row-cols-sm-1 row-cols-sm-2 align-middle">
                                                 <!-- Muestra el contenido en 1 columna en celular y 2 en desktop-->
                                                 <div class="col-md-4">
-                                                    <img class="img-fluid rounded m-md-1" src="img/obras/kimitachi.jpg"
-                                                        alt="Póster de la película 'El Niño y la Garza'">
-                                                    <p class="copyright"><span>© 2023 Hayao Miyazaki/Studio
-                                                            Ghibli</span></p>
+                                                    <img class="img-fluid rounded m-md-1" src="img/obras/mimi.jpg"
+                                                        alt="Póster de la película 'Susurros del Corazón'">
+                                                    <p class="copyright"><span>© 1995 Aoi Hiiragi, Shueisha/Hayao Miyazaki/Studio Ghibli, NH</span></p>
                                                 </div>
                                                 <div class="col-md-8">
-                                                    <p>
                                                     <h6>Sinopsis</h6>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                                    culpa qui officia deserunt mollit anim id est laborum.<br><br>
-                                                    <a href="elninoylagarza.html">Ver trailer, capturas y ficha
-                                                        técnica</a></p>
+                                                    <p>Shizuku, una adolescente amante de los libros, descubre que todos los títulos que ha tomado prestados en la biblioteca han sido previamente seleccionados por un misterioso chico llamado Seiji. A medida que la busca para conocerlo, Shizuku se adentra en un viaje de autodescubrimiento, enfrentando sus sueños, sus inseguridades y su creciente interés por Seiji, un joven con su propia pasión por la música y el arte.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div> <!-- Hasta acá es una película-->
+
                             <!-- Acá empieza una película -->
-                            <!-- Obra 26 -->
-                            <div class="col todos otros">
-                                <div class="card mb-3 box-shadow">
+                            <!-- Obra 10 -->
+                            <div class="col todos miyazaki">
+                                <div class="card mb-3 box-shadow h-100">
                                     <!-- Póster de la película que al ser clickeado, salta el modal-->
-                                    <img class="card-img-top" src="img/obras/kimitachi.jpg"
-                                        alt="Póster de la película 'El Niño y la Garza'" data-bs-toggle="modal"
-                                        data-bs-target="#obra28">
+                                    <img class="card-img-top" src="img/obras/onyourmark.jpg"
+                                        alt="Póster del video musical 'On Your Mark'" data-bs-toggle="modal"
+                                        data-bs-target="#obra10">
 
                                     <!-- Tarjeta debajo del póster con info del título y el año de estreno-->
-                                    <div class="card-body">
-                                        <p class="card-text text-center"><b>El Niño y la Garza</b><br>2023</p>
+                                    <div class="card-body d-flex align-items-center">
+                                        <p class="card-text text-center w-100"><b>On Your Mark</b><br>1995</p>
                                     </div>
                                 </div>
 
                                 <!-- Modal con info sobre la película -->
-                                <div class="modal fade" id="obra28" data-bs-backdrop="static" tabindex="-1"
-                                    aria-labelledby="obra28Label" aria-hidden="true">
+                                <div class="modal fade" id="obra10" data-bs-backdrop="static" tabindex="-1"
+                                    aria-labelledby="obra10Label" aria-hidden="true">
                                     <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h2 class="modal-title fs-5" id="obra28Label">El Niño y la Garza</h2>
+                                                <h2 class="modal-title fs-5" id="obra10Label">On Your Mark (1995)</h2>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body row row-cols-sm-1 row-cols-sm-2 align-middle">
                                                 <!-- Muestra el contenido en 1 columna en celular y 2 en desktop-->
                                                 <div class="col-md-4">
-                                                    <img class="img-fluid rounded m-md-1" src="img/obras/kimitachi.jpg"
-                                                        alt="Póster de la película 'El Niño y la Garza'">
-                                                    <p class="copyright"><span>© 2023 Hayao Miyazaki/Studio
-                                                            Ghibli</span></p>
+                                                    <img class="img-fluid rounded m-md-1" src="img/obras/onyourmark.jpg"
+                                                        alt="Póster del video musical 'On Your Mark'">
+                                                    <p class="copyright"><span>© 1995 Hayao Miyazaki/Studio Ghibli</span></p>
                                                 </div>
                                                 <div class="col-md-8">
-                                                    <p>
                                                     <h6>Sinopsis</h6>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                                    culpa qui officia deserunt mollit anim id est laborum.<br><br>
-                                                    <a href="elninoylagarza.html">Ver trailer, capturas y ficha
-                                                        técnica</a></p>
+                                                    <p>*On Your Mark* es un video musical de la banda japonesa Chage & Aska, que combina una narrativa visual compleja con su canción del mismo nombre. La historia sigue a dos protagonistas que viven en un mundo distópico, donde la humanidad se enfrenta a una crisis ecológica y social. Mientras la joven protagonista es rescatada de una cápsula que parece contener el último vestigio de esperanza, el hombre que la salva se ve atrapado en un conflicto interno sobre su destino y el de la humanidad. A través de una serie de escenas simbólicas y poéticas, el video aborda temas de sacrificio, esperanza y el impacto del amor en tiempos de desesperación.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Hasta acá es una película-->
+
+                            <!-- Acá empieza una película -->
+                            <!-- Obra 9 -->
+                            <div class="col todos takahata">
+                                <div class="card mb-3 box-shadow h-100">
+                                    <!-- Póster de la película que al ser clickeado, salta el modal-->
+                                    <img class="card-img-top" src="img/obras/tanuki.jpg"
+                                        alt="Póster de la película 'Pompoco'" data-bs-toggle="modal"
+                                        data-bs-target="#obra9">
+
+                                    <!-- Tarjeta debajo del póster con info del título y el año de estreno-->
+                                    <div class="card-body d-flex align-items-center">
+                                        <p class="card-text text-center w-100"><b>Pompoco</b><br>1994</p>
+                                    </div>
+                                </div>
+
+                                <!-- Modal con info sobre la película -->
+                                <div class="modal fade" id="obra9" data-bs-backdrop="static" tabindex="-1"
+                                    aria-labelledby="obra9Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 class="modal-title fs-5" id="obra9Label">Pompoco (1994)</h2>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body row row-cols-sm-1 row-cols-sm-2 align-middle">
+                                                <!-- Muestra el contenido en 1 columna en celular y 2 en desktop-->
+                                                <div class="col-md-4">
+                                                    <img class="img-fluid rounded m-md-1" src="img/obras/tanuki.jpg"
+                                                        alt="Póster de la película 'Pompoco'">
+                                                    <p class="copyright"><span>© 1994 Isao Takahata/Studio Ghibli, NH</span></p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <h6>Sinopsis</h6>
+                                                    <p>Un grupo de tanukis (perros mapache) en el Japón rural lucha por proteger su hogar de la urbanización que avanza a gran velocidad. Los tanukis, dotados de habilidades mágicas, usan sus poderes para intentar frenar la destrucción de su territorio, transformándose en diversas criaturas y engañando a los humanos. Sin embargo, pronto descubren que su lucha no será fácil y deben enfrentarse a dilemas morales y sacrificios mientras intentan encontrar un equilibrio entre la tradición y el cambio.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Hasta acá es una película-->
+
+                            <!-- Acá empieza una película -->
+                            <!-- Obra 8 -->
+                            <div class="col todos otros">
+                                <div class="card mb-3 box-shadow h-100">
+                                    <!-- Póster de la película que al ser clickeado, salta el modal-->
+                                    <img class="card-img-top" src="img/obras/umi.jpg"
+                                        alt="Póster de la película 'Puedo Escuchar el Mar'" data-bs-toggle="modal"
+                                        data-bs-target="#obra8">
+
+                                    <!-- Tarjeta debajo del póster con info del título y el año de estreno-->
+                                    <div class="card-body d-flex align-items-center">
+                                        <p class="card-text text-center w-100"><b>Puedo Escuchar el Mar</b><br>1993</p>
+                                    </div>
+                                </div>
+
+                                <!-- Modal con info sobre la película -->
+                                <div class="modal fade" id="obra8" data-bs-backdrop="static" tabindex="-1"
+                                    aria-labelledby="obra8Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 class="modal-title fs-5" id="obra8Label">Puedo Escuchar el Mar (1993)</h2>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body row row-cols-sm-1 row-cols-sm-2 align-middle">
+                                                <!-- Muestra el contenido en 1 columna en celular y 2 en desktop-->
+                                                <div class="col-md-4">
+                                                    <img class="img-fluid rounded m-md-1" src="img/obras/umi.jpg"
+                                                        alt="Póster de la película 'Puedo Escuchar el Mar'">
+                                                    <p class="copyright"><span>© 1993 Saeko Himuro/Keiko Niwa/Studio Ghibli, N</span></p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <h6>Sinopsis</h6>
+                                                    <p>Rikako Mutō es una estudiante de Tokio que acaba de ser transferida a uno de los institutos de Kōchi, una ciudad costera alejada de la capital, tras el divorcio de sus padres. Rikako es una joven guapa, inteligente, buena en los estudios y en los deportes. Sin embargo, no consigue adaptarse a la vida social de la escuela. Al mismo instituto acuden Taku Morisaki y Yutaka Matsuno, dos grandes amigos desde la secundaria, el primero de los cuales empieza a fijarse visiblemente en la joven recién llegada.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Hasta acá es una película-->
+
+                            <!-- Acá empieza una película -->
+                            <!-- Obra 7 -->
+                            <div class="col todos miyazaki">
+                                <div class="card mb-3 box-shadow h-100">
+                                    <!-- Póster de la película que al ser clickeado, salta el modal-->
+                                    <img class="card-img-top" src="img/obras/porco.jpg"
+                                        alt="Póster de la película 'Porco Rosso'" data-bs-toggle="modal"
+                                        data-bs-target="#obra7">
+
+                                    <!-- Tarjeta debajo del póster con info del título y el año de estreno-->
+                                    <div class="card-body d-flex align-items-center">
+                                        <p class="card-text text-center w-100"><b>Porco Rosso</b><br>1992</p>
+                                    </div>
+                                </div>
+
+                                <!-- Modal con info sobre la película -->
+                                <div class="modal fade" id="obra7" data-bs-backdrop="static" tabindex="-1"
+                                    aria-labelledby="obra7Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 class="modal-title fs-5" id="obra7Label">Porco Rosso (1992)</h2>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body row row-cols-sm-1 row-cols-sm-2 align-middle">
+                                                <!-- Muestra el contenido en 1 columna en celular y 2 en desktop-->
+                                                <div class="col-md-4">
+                                                    <img class="img-fluid rounded m-md-1" src="img/obras/porco.jpg"
+                                                        alt="Póster de la película 'Porco Rosso'">
+                                                    <p class="copyright"><span>© 1992 Hayao Miyazaki/Studio Ghibli, NN</span></p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <h6>Sinopsis</h6>
+                                                    <p>En el Italia de la posguerra, un piloto llamado Marco Pagot se transforma en un cerdo antropomórfico después de una serie de eventos misteriosos. Conocido como "Porco Rosso", trabaja como cazarrecompensas en el mar Adriático, enfrentándose a piratas y luchando por su libertad. Mientras se enfrenta a su pasado y las cicatrices de la guerra, Porco establece una relación con una joven mecánica, Fio, quien lo ayuda a reparar su avión. Juntos se enfrentan a nuevos desafíos, mientras él busca redimir su vida y encontrar un propósito más allá de su maldición.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Hasta acá es una película-->
+
+                            <!-- Acá empieza una película -->
+                            <!-- Obra 6 -->
+                            <div class="col todos takahata">
+                                <div class="card mb-3 box-shadow h-100">
+                                    <!-- Póster de la película que al ser clickeado, salta el modal-->
+                                    <img class="card-img-top" src="img/obras/omoide.jpg"
+                                        alt="Póster de la película 'Recuerdos del Ayer'" data-bs-toggle="modal"
+                                        data-bs-target="#obra6">
+
+                                    <!-- Tarjeta debajo del póster con info del título y el año de estreno-->
+                                    <div class="card-body d-flex align-items-center">
+                                        <p class="card-text text-center w-100"><b>Recuerdos del Ayer</b><br>1991</p>
+                                    </div>
+                                </div>
+
+                                <!-- Modal con info sobre la película -->
+                                <div class="modal fade" id="obra6" data-bs-backdrop="static" tabindex="-1"
+                                    aria-labelledby="obra6Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 class="modal-title fs-5" id="obra6Label">Recuerdos del Ayer (1991)</h2>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body row row-cols-sm-1 row-cols-sm-2 align-middle">
+                                                <!-- Muestra el contenido en 1 columna en celular y 2 en desktop-->
+                                                <div class="col-md-4">
+                                                    <img class="img-fluid rounded m-md-1" src="img/obras/omoide.jpg"
+                                                        alt="Póster de la película 'Recuerdos del Ayer'">
+                                                    <p class="copyright"><span>© 1991 Hotaru Okamoto, Yuko Tone/Isao Takahata/Studio Ghibli, NH</span></p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <h6>Sinopsis</h6>
+                                                    <p>Taeko Okajima es una joven asalariada de veintisiete años que pide permiso de vacaciones para poder regresar a su casa en el pueblo rural de su cuñado, y donde guarda tiernos momentos. En el transcurso de su viaje a la granja de sus familiares y a su posterior estancia, irá recordando su infancia, sus días en la escuela y otras vivencias peculiares, mientras vive intensamente su presente.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Hasta acá es una película-->
+
+                            <!-- Acá empieza una película -->
+                            <!-- Obra 5 -->
+                            <div class="col todos miyazaki">
+                                <div class="card mb-3 box-shadow h-100">
+                                    <!-- Póster de la película que al ser clickeado, salta el modal-->
+                                    <img class="card-img-top" src="img/obras/majo.jpg"
+                                        alt="Póster de la película 'Kiki: Entregas a Domicilio'" data-bs-toggle="modal"
+                                        data-bs-target="#obra5">
+
+                                    <!-- Tarjeta debajo del póster con info del título y el año de estreno-->
+                                    <div class="card-body d-flex align-items-center">
+                                        <p class="card-text text-center w-100"><b>Kiki: Entregas a Domicilio</b><br>1989</p>
+                                    </div>
+                                </div>
+
+                                <!-- Modal con info sobre la película -->
+                                <div class="modal fade" id="obra5" data-bs-backdrop="static" tabindex="-1"
+                                    aria-labelledby="obra5Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 class="modal-title fs-5" id="obra5Label">Kiki: Entregas a Domicilio (1989)</h2>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body row row-cols-sm-1 row-cols-sm-2 align-middle">
+                                                <!-- Muestra el contenido en 1 columna en celular y 2 en desktop-->
+                                                <div class="col-md-4">
+                                                    <img class="img-fluid rounded m-md-1" src="img/obras/majo.jpg"
+                                                        alt="Póster de la película 'Kiki: Entregas a Domicilio'">
+                                                    <p class="copyright"><span>© 1989 Eiko Kadono/Hayao Miyazaki/Studio Ghibli, N</span></p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <h6>Sinopsis</h6>
+                                                    <p>Kiki, una joven bruja que acaba de cumplir 13 años, se muda a un pueblo costero para completar su entrenamiento. Con su gato negro Jiji como compañero, Kiki comienza a trabajar como repartidora voladora, utilizando su escoba para entregar paquetes. A pesar de las dificultades y la falta de confianza en sí misma, Kiki enfrenta los retos de la vida adulta y descubre su propio camino, mientras se adapta a su nueva vida y encuentra su verdadera fuerza interior.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Hasta acá es una película-->
+
+                            <!-- Acá empieza una película -->
+                            <!-- Obra 4 -->
+                            <div class="col todos miyazaki">
+                                <div class="card mb-3 box-shadow h-100">
+                                    <!-- Póster de la película que al ser clickeado, salta el modal-->
+                                    <img class="card-img-top" src="img/obras/totoro.jpg"
+                                        alt="Póster de la película 'Mi Vecino Totoro'" data-bs-toggle="modal"
+                                        data-bs-target="#obra4">
+
+                                    <!-- Tarjeta debajo del póster con info del título y el año de estreno-->
+                                    <div class="card-body d-flex align-items-center">
+                                        <p class="card-text text-center w-100"><b>Mi Vecino Totoro</b><br>1988</p>
+                                    </div>
+                                </div>
+
+                                <!-- Modal con info sobre la película -->
+                                <div class="modal fade" id="obra4" data-bs-backdrop="static" tabindex="-1"
+                                    aria-labelledby="obra4Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 class="modal-title fs-5" id="obra4Label">Mi Vecino Totoro (1988)</h2>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body row row-cols-sm-1 row-cols-sm-2 align-middle">
+                                                <!-- Muestra el contenido en 1 columna en celular y 2 en desktop-->
+                                                <div class="col-md-4">
+                                                    <img class="img-fluid rounded m-md-1" src="img/obras/totoro.jpg"
+                                                        alt="Póster de la película 'Mi Vecino Totoro'">
+                                                    <p class="copyright"><span>© 1988 Hayao Miyazaki/Studio Ghibli</span></p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <h6>Sinopsis</h6>
+                                                    <p>Satsuki y Mei, dos hermanas que se mudan al campo con su padre, descubren un mundo mágico cuando encuentran a Totoro, una criatura gigante y misteriosa que habita en el bosque cercano. Mientras su madre está en el hospital, las niñas se enfrentan a la preocupación por su bienestar y las dificultades de la vida rural. Pero las cosas tomarán un giro inesperado cuando Mei se pierde yendo sola hasta el hospital para visitar a su madre.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Hasta acá es una película-->
+
+                            <!-- Acá empieza una película -->
+                            <!-- Obra 3 -->
+                            <div class="col todos takahata">
+                                <div class="card mb-3 box-shadow h-100">
+                                    <!-- Póster de la película que al ser clickeado, salta el modal-->
+                                    <img class="card-img-top" src="img/obras/hotarunohaka.jpg"
+                                        alt="Póster de la película 'La Tumba de las Luciérnagas'" data-bs-toggle="modal"
+                                        data-bs-target="#obra3">
+
+                                    <!-- Tarjeta debajo del póster con info del título y el año de estreno-->
+                                    <div class="card-body d-flex align-items-center">
+                                        <p class="card-text text-center w-100"><b>La Tumba de las Luciérnagas</b><br>1988</p>
+                                    </div>
+                                </div>
+
+                                <!-- Modal con info sobre la película -->
+                                <div class="modal fade" id="obra3" data-bs-backdrop="static" tabindex="-1"
+                                    aria-labelledby="obra3Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 class="modal-title fs-5" id="obra3Label">La Tumba de las Luciérnagas (1988)</h2>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body row row-cols-sm-1 row-cols-sm-2 align-middle">
+                                                <!-- Muestra el contenido en 1 columna en celular y 2 en desktop-->
+                                                <div class="col-md-4">
+                                                    <img class="img-fluid rounded m-md-1" src="img/obras/hotarunohaka.jpg"
+                                                        alt="Póster de la película 'La Tumba de las Luciérnagas'">
+                                                    <p class="copyright"><span>© 野坂昭如/新潮社, 1988</span></p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <h6>Sinopsis</h6>
+                                                    <p>Seita y su hermana pequeña, Setsuko, luchan por sobrevivir durante los últimos meses de la Segunda Guerra Mundial en Japón. Tras perder a su madre en un bombardeo, los dos niños se ven obligados a desplazarse por las ciudades devastadas en busca de un refugio, mientras enfrentan la escasez de comida y la indiferencia de los adultos. A medida que la guerra avanza, su vínculo fraternal se pone a prueba, mientras enfrentan la dura realidad de la pobreza y la pérdida.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Hasta acá es una película-->
+
+                            <!-- Acá empieza una película -->
+                            <!-- Obra 2 -->
+                            <div class="col todos miyazaki">
+                                <div class="card mb-3 box-shadow h-100">
+                                    <!-- Póster de la película que al ser clickeado, salta el modal-->
+                                    <img class="card-img-top" src="img/obras/laputa.jpg"
+                                        alt="Póster de la película 'El Castillo en el Cielo'" data-bs-toggle="modal"
+                                        data-bs-target="#obra2">
+
+                                    <!-- Tarjeta debajo del póster con info del título y el año de estreno-->
+                                    <div class="card-body d-flex align-items-center">
+                                        <p class="card-text text-center w-100"><b>El Castillo en el Cielo</b><br>1986</p>
+                                    </div>
+                                </div>
+
+                                <!-- Modal con info sobre la película -->
+                                <div class="modal fade" id="obra2" data-bs-backdrop="static" tabindex="-1"
+                                    aria-labelledby="obra2Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 class="modal-title fs-5" id="obra2Label">El Castillo en el Cielo (1986)</h2>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body row row-cols-sm-1 row-cols-sm-2 align-middle">
+                                                <!-- Muestra el contenido en 1 columna en celular y 2 en desktop-->
+                                                <div class="col-md-4">
+                                                    <img class="img-fluid rounded m-md-1" src="img/obras/laputa.jpg"
+                                                        alt="Póster de la película 'El Castillo en el Cielo'">
+                                                    <p class="copyright"><span>© 1986 Hayao Miyazaki/Studio Ghibli</span></p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <h6>Sinopsis</h6>
+                                                    <p>Pazu, un joven huérfano, descubre a Sheeta, una niña con un misterioso amuleto, que cae del cielo. Juntos, se embarcan en una aventura para encontrar el legendario castillo flotante de Laputa, que según la leyenda, esconde un poder inmenso. Mientras son perseguidos por piratas y agentes del gobierno, Pazu y Sheeta deben proteger el secreto de Laputa y enfrentar los peligros que conlleva el deseo de controlar ese poder.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Hasta acá es una película-->
+
+                            <!-- Acá empieza una película -->
+                            <!-- Obra 1 -->
+                            <div class="col todos miyazaki">
+                                <div class="card mb-3 box-shadow h-100">
+                                    <!-- Póster de la película que al ser clickeado, salta el modal-->
+                                    <img class="card-img-top" src="img/obras/nausicaa.jpg"
+                                        alt="Póster de la película 'Nausicaä del Valle del Viento'" data-bs-toggle="modal"
+                                        data-bs-target="#obra1">
+
+                                    <!-- Tarjeta debajo del póster con info del título y el año de estreno-->
+                                    <div class="card-body d-flex align-items-center">
+                                        <p class="card-text text-center w-100"><b>Nausicaä del Valle del Viento</b><br>1984</p>
+                                    </div>
+                                </div>
+
+                                <!-- Modal con info sobre la película -->
+                                <div class="modal fade" id="obra1" data-bs-backdrop="static" tabindex="-1"
+                                    aria-labelledby="obra1Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 class="modal-title fs-5" id="obra1Label">Nausicaä del Valle del Viento (1984)</h2>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body row row-cols-sm-1 row-cols-sm-2 align-middle">
+                                                <!-- Muestra el contenido en 1 columna en celular y 2 en desktop-->
+                                                <div class="col-md-4">
+                                                    <img class="img-fluid rounded m-md-1" src="img/obras/nausicaa.jpg"
+                                                        alt="Póster de la película 'Nausicaä del Valle del Viento'">
+                                                    <p class="copyright"><span>© 1984 Hayao Miyazaki/Studio Ghibli, H</span></p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <h6>Sinopsis</h6>
+                                                    <p>Nausicaä, la princesa del Valle del Viento, vive en un mundo post-apocalíptico donde la humanidad lucha por sobrevivir en medio de un vasto bosque venenoso. Mientras las naciones vecinas se enfrentan en una guerra por el control de los recursos, Nausicaä busca una forma de sanar la tierra y restaurar el equilibrio entre la humanidad y la naturaleza. Con su valentía y compasión, se enfrenta a poderosos enemigos, mientras descubre secretos sobre el pasado y el futuro de su mundo.</p>
                                                 </div>
                                             </div>
                                         </div>

@@ -300,7 +300,6 @@ iframe {
 
 /* Estilos para las cartas flipeables */
 .area-juego {
-    background-color: #727cf5;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -348,6 +347,11 @@ iframe {
     pointer-events: none;
 }
 
+.paginaobras .card-img-top {
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+
 
 /* Estilos para la página de preguntas frecuentes */
 .preguntas {
@@ -392,7 +396,7 @@ iframe {
     }
 
     /* Estilos para la página de juegos */
-    .area-juego .card, .card img {
+    .area-juego .card, .area-juego .card img {
         width: 8vw;
         height: 8vw;
     }

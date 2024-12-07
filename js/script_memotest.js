@@ -3,6 +3,10 @@ const selectorNivel = document.querySelector('.selector-nivel');
 selectorNivel.style.display = 'block';
 const areaJuego = document.querySelector('.area-juego');
 areaJuego.style.display = 'block';
+const reinicioJuego = document.querySelector('.reinicio-juego');
+reinicioJuego.style.display = 'none';
+const resultadoJuego = document.querySelector('.resultado-juego');
+resultadoJuego.style.display = 'none';
 
 //Defino el array de las imágenes de las cartas
 let mazoCartas = [];
@@ -14,6 +18,7 @@ let carta = {
 }
 //Este es el conjunto de cartas que se jugarán
 let mazoJuego = [];
+let nivelElegido;
 
 //Creo el mazo completo de todas las cartas
 function crearMazo() {
@@ -58,24 +63,29 @@ function crearMazoJuego(nivel) {
 //Selecciono el nivel del juego
 selectorNivel.addEventListener("click", function (e) {
     e.preventDefault();
-    let nivelElegido = e.target.id;
+    nivelElegido = e.target.id;
     console.log(nivelElegido);
+    comenzarJuego(nivelElegido);
+})
+
+//Función para iniciar el juego
+function comenzarJuego(nivel) {
     crearMazo();
     mezclarMazo(mazoCartas);
 
     //Asigna el valor del nivel elegido según el id del botón clickeado
-    if (nivelElegido === 'inicial') {
+    if (nivel === 'inicial') {
         crearMazoJuego(8);
-    } else if (nivelElegido === 'intermedio') {
+    } else if (nivel === 'intermedio') {
         crearMazoJuego(10);
-    } else if (nivelElegido === 'avanzado') {
+    } else if (nivel === 'avanzado') {
         crearMazoJuego(14);
     }
 
     selectorNivel.style.display = 'none';
     areaJuego.style.display = 'block';
     mostrarCartas(mazoJuego);
-})
+}
 
 
 //Función para cargar las cartas a mostrar
@@ -101,6 +111,10 @@ let segundaCarta;
 let valorPrimeraCarta = null;
 let valorSegunaCarta = null;
 let contadorParejas = 0;
+let contadorIntentos = 0;
+let comienzoJuego = false;
+let startTime;
+let endTime;
 
 //Función que se dispara al clickear una carta
 areaJuego.addEventListener("click", function (e) {
@@ -112,6 +126,10 @@ areaJuego.addEventListener("click", function (e) {
         console.log(valorCarta);
 
         if (valorPrimeraCarta === null) {
+            if (comienzoJuego === false) {
+                comienzoJuego = true;
+                startTime = new Date();
+            }
             valorPrimeraCarta = valorCarta;
             tarjeta.classList.add('disabled');
             primeraCarta = tarjeta;
@@ -126,8 +144,9 @@ areaJuego.addEventListener("click", function (e) {
 
 //Función para verificar si las cartas clickeadas son iguales
 function verificarCartas() {
+    contadorIntentos++;
     if (valorPrimeraCarta === valorSegunaCarta) {
-        setTimeout(() => {
+        setTimeout(() => { //El alert salta con un delay para que se vea el efecto de la carta volteada
             alert("¡Bien hecho! Has encontrado una pareja");
             contadorParejas++;
             valorPrimeraCarta = null;
@@ -135,7 +154,7 @@ function verificarCartas() {
             verificarFinJuego();
         }, 1000);
     } else {
-        setTimeout(() => {
+        setTimeout(() => { //El alert salta con un delay para que se vea el efecto de la carta volteada
             alert("¡Ups! No eran una pareja");
             valorPrimeraCarta = null;
             valorSegunaCarta = null;
@@ -150,6 +169,41 @@ function verificarCartas() {
 //Función para verificar si el juego ha terminado
 function verificarFinJuego() {
     if (contadorParejas === mazoJuego.length / 2) {
-        alert("¡Felicidades! Has encontrado todas las parejas");
+        endTime = new Date();
+        let tiempoTranscurrido = endTime - startTime;
+        reinicioJuego.style.display = 'block';
+        resultadoJuego.innerHTML = `¡Felicidades! Has conseguido encontrar todas las parejas en ${contadorIntentos} intentos y ${tiempoTranscurrido/1000} segundos`;
+        resultadoJuego.style.display = 'block';
     }
+}
+
+//Opciones de reinicio
+reinicioJuego.addEventListener("click", function (e) {
+    e.preventDefault();
+    let opcionReinicio = e.target.id;
+
+    if (opcionReinicio === 'reiniciar') {
+        reiniciar();
+        comenzarJuego(nivelElegido);
+        reinicioJuego.style.display = 'none';
+    } else if (opcionReinicio === 'nuevonivel') {
+        reiniciar();
+        selectorNivel.style.display = 'block';
+        areaJuego.style.display = 'none';
+        reinicioJuego.style.display = 'none';
+    }
+});
+
+//Función para reiniciar el juego
+function reiniciar() {
+    primeraCarta = null;
+    segundaCarta = null;
+    valorPrimeraCarta = null;
+    valorSegunaCarta = null;
+    contadorParejas = 0;
+    contadorIntentos = 0;
+    comienzoJuego = false;
+    startTime = null;
+    endTime = null;
+    areaJuego.innerHTML = '';
 }
