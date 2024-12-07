@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de memotest | Studio Ghibli Fansite</title>
+
+    <!--Linkeo Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--Linkeo css-->
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <!--Barra de navegación-->
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Studio Ghibli</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="obras.html">Obras</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Sobre el estudio
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="estudio.html">Historia</a></li>
+                                <li><a class="dropdown-item" href="cronologia.html">Cronología</a></li>
+                                <li><a class="dropdown-item" href="premios.html">Premios</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Creadores destacados
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="hayaomiyazaki.html">Hayao Miyazaki</a></li>
+                                <li><a class="dropdown-item" href="isaotakahata.html">Isao Takahata</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="joehisaishi.html">Joe Hisaishi</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="preguntas.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="memotest.html">Memotest</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="desarrollador.html">Desarrollador</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section><!--Título de la página-->
+                <div class="bg-image position-relative">
+                    <img src="img/fondos/kaguya1.jpg" alt="Imagen de fondo del título de la página">
+                    <div class="mask">
+                        <h1>Juego de memotest</h1>
+                    </div>
+                </div>
+            </section>
+
+            <div id="contenedor">
+                <section>
+                    <div class="card p-2">
+                        <div class="card-body">
+                            <h4 class="card-title">Instrucciones</h4>
+                            <p class="card-text collapse show" id="instrucciones">¡Pon a prueba tu memoria con este juego de memotest! En cada turno, elije dos cartas e intenta juntar a los mismos personajes. ¿Podrás conseguirlos a todos?</p>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#instrucciones" aria-expanded="false" aria-controls="instrucciones">
+                                Ocultar instrucciones
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <br>
+                    <div class="selector-nivel text-center">
+                        <button class="btn btn-primary m-1 nivel" id="inicial">Nivel Inicial</button><br>
+                        <button class="btn btn-primary m-1 nivel" id="intermedio">Nivel Intermedio</button><br>
+                        <button class="btn btn-primary m-1 nivel" id="avanzado">Nivel Avanzado</button>
+                    </div>
+                    <div class="area-juego">
+                        <div class="container-fluid">
+                            <div class="row row-cols-4 row-cols-md-6 g-1"> <!-- 2 columnas para celular y 5 para compu-->
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                                <div class="col"><img src="img/memotest/memotest1.jpg"></div>
+                            </div> <!-- Cierra el row -->
+                        </div>
+                    </div>
+                </section>
+                <br>
+            </div> <!--Cierra div contenedor-->
+            <footer>
+                <address>
+                    Página desarrollada por <a href="desarrollador.html">Celina Hara</a> para UNA Multimediales - IG
+                    2024
+                </address>
+                <p>© 2005-2024 STUDIO GHIBLI Inc.</p>
+            </footer>
+        </article>
+    </main>
+    <!--Linkeo scripts-->
+    <script src="js/script_memotest.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

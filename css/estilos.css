@@ -281,6 +281,11 @@ iframe {
     right: -55.8px;
 }
 
+/* Estilos para la página de juegos */
+.selector-nivel .btn {
+    width: 200px;
+}
+
 /* Estilos para la página de preguntas frecuentes */
 .preguntas {
     padding: 0;
