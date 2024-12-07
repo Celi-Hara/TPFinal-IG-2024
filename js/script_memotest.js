@@ -2,9 +2,7 @@
 const selectorNivel = document.querySelector('.selector-nivel');
 selectorNivel.style.display = 'block';
 const areaJuego = document.querySelector('.area-juego');
-areaJuego.style.display = 'none';
-
-
+areaJuego.style.display = 'block';
 
 //Defino el array de las imágenes de las cartas
 let mazoCartas = [];
@@ -69,11 +67,40 @@ selectorNivel.addEventListener("click", function (e) {
     if (nivelElegido === 'inicial') {
         crearMazoJuego(8);
     } else if (nivelElegido === 'intermedio') {
-        crearMazoJuego(12);
+        crearMazoJuego(10);
     } else if (nivelElegido === 'avanzado') {
-        crearMazoJuego(18);
+        crearMazoJuego(14);
     }
 
     selectorNivel.style.display = 'none';
     areaJuego.style.display = 'block';
+    mostrarCartas(mazoJuego);
 })
+
+
+//Función para cargar las cartas a mostrar
+function mostrarCartas (mazoJuego) {
+    for (i=0 ; i < mazoJuego.length ; i ++) {
+        let cartaClickeable = document.createElement('div');
+        cartaClickeable.classList.add("card");
+        cartaClickeable.classList.add("box-shadow");
+        cartaClickeable.id = `carta${i}`;
+        cartaClickeable.innerHTML = `<div class="card-front">
+                                            <img src="img/memotest/memotest1.jpg" alt="Frente de la carta">
+                                        </div>
+                                        <div class="card-back">
+                                            <img src="img/memotest/memotest${mazoJuego[i].valor}.jpg" alt="Reverso de la carta">
+                                        </div>`;
+        areaJuego.append(cartaClickeable);
+    }
+}
+
+areaJuego.addEventListener("click", function(e) {
+    e.preventDefault();
+    let tarjeta = e.target.closest('.card');
+    let valorCarta = e.target.id;
+    if (tarjeta) {
+        tarjeta.classList.toggle('flipped');
+        console.log(valorCarta);
+    }
+});
