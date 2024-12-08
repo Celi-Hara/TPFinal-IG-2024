@@ -147,16 +147,16 @@ footer {
     color: #b38f8f;
 }
 
-footer a:link, table a:link, .card a:link{
+footer a:link, table a:link, .card-body a:link{
     color: #F2C6AC;
 }
-footer a:visited, table a:visited, .card a:visited{ 
+footer a:visited, table a:visited, .card-body a:visited{ 
     color: #F29580;
 }
-footer a:hover, table a:hover, .card a:hover{
+footer a:hover, table a:hover, .card-body a:hover{
     color: #F28972;
 }
-footer a:active, table a:active, .card a:active{
+footer a:active, table a:active, .card-body a:active{
     color: #F2778D;
 }
 
