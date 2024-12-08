@@ -76,8 +76,10 @@ function comenzarJuego(nivel) {
     //Asigna el valor del nivel elegido según el id del botón clickeado
     if (nivel === 'inicial') {
         crearMazoJuego(8);
+        areaJuego.classList.add('inicial');
     } else if (nivel === 'intermedio') {
         crearMazoJuego(10);
+        areaJuego.classList.add('intermedio');
     } else if (nivel === 'avanzado') {
         crearMazoJuego(14);
     }
@@ -96,7 +98,7 @@ function mostrarCartas(mazoJuego) {
         cartaClickeable.classList.add("box-shadow");
         cartaClickeable.dataset.valor = mazoJuego[i].valor; //Se agrega valor de la carta
         cartaClickeable.innerHTML = `<div class="card-front">
-                                            <img src="img/memotest/memotest1.jpg" alt="Frente de la carta">
+                                            <img src="img/memotest/memotestback.jpg" alt="Frente de la carta">
                                         </div>
                                         <div class="card-back">
                                             <img src="img/memotest/memotest${mazoJuego[i].valor}.jpg" alt="Reverso de la carta">
@@ -172,7 +174,13 @@ function verificarFinJuego() {
         endTime = new Date();
         let tiempoTranscurrido = endTime - startTime;
         reinicioJuego.style.display = 'block';
-        resultadoJuego.innerHTML = `¡Felicidades! Has conseguido encontrar todas las parejas en ${contadorIntentos} intentos y ${tiempoTranscurrido/1000} segundos`;
+        if (tiempoTranscurrido < 60000) {
+            resultadoJuego.innerHTML = `¡Felicidades! Has conseguido encontrar todas las parejas en ${contadorIntentos} intentos y ${Math.floor(tiempoTranscurrido/1000)} segundos`;
+        } else if (tiempoTranscurrido > 60000 && tiempoTranscurrido < 120000) {
+            resultadoJuego.innerHTML = `¡Felicidades! Has conseguido encontrar todas las parejas en ${contadorIntentos} intentos y ${Math.floor(tiempoTranscurrido/60000)} minuto y ${Math.floor((tiempoTranscurrido % 60000) / 1000)} segundos`;
+        } else {
+            resultadoJuego.innerHTML = `¡Felicidades! Has conseguido encontrar todas las parejas en ${contadorIntentos} intentos y ${Math.floor(tiempoTranscurrido/60000)} minutos y ${Math.floor((tiempoTranscurrido % 60000) / 1000)} segundos`;
+        }
         resultadoJuego.style.display = 'block';
     }
 }
@@ -190,6 +198,8 @@ reinicioJuego.addEventListener("click", function (e) {
         reiniciar();
         selectorNivel.style.display = 'block';
         areaJuego.style.display = 'none';
+        areaJuego.classList.remove('inicial');
+        areaJuego.classList.remove('intermedio');
         reinicioJuego.style.display = 'none';
     }
 });

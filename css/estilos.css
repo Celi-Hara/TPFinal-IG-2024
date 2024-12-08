@@ -49,17 +49,27 @@ body {
     flex-direction: column;
 }
 
-/* Estilos para el footer */
-footer {
+/* Estilos para la barra de navegación y el footer */
+.navbar, .nav-item .dropdown-menu, footer {
+    background-color: brown !important;
+}
+
+.navbar-brand, .nav-link, .dropdown-item, footer {
     color: #FFFFFF;
+}
+
+.navbar-brand img {
+    width: 30px;
+}
+
+footer {
     font-size: 0.8em;
-    background-color: blue;
     text-align: center;
     width: 100%;
     padding: 20px;
 }
 
-footer a {
+a {
     text-decoration: none;
 }
 
@@ -115,12 +125,9 @@ footer a {
 }
 
 /* Estilos para la página de noticias */
-.crop-text-2 {
-    -webkit-line-clamp: 2;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
+/* Ajuste para las tarjetas que son objetivos de enlaces ancla */
+.noticias .card {
+    scroll-margin-top: 80px; 
 }
 
 /* Estilos para la página de obras */
@@ -142,6 +149,10 @@ footer a {
 span {
     font-size: 0.8em;
     color: gray;
+}
+
+.copyright {
+    line-height: 0.8;
 }
 
 .row img {
@@ -167,7 +178,6 @@ iframe {
 }
 
 /* Estilos para las páginas sobre el estudio y sus creadores */
-
 .derecha img,
 .izquierda img {
     display: block;
@@ -175,6 +185,10 @@ iframe {
     width: 100%;
     max-width: 400px;
     border-radius: 10px;
+}
+
+.listaperfil ul, .listaperfildos ul {
+    text-align: left;
 }
 
 /* Estilos para el timeline */
@@ -393,12 +407,26 @@ iframe {
         columns: 2;
         -webkit-columns: 2;
         -moz-columns: 2;
+        column-gap: 40px;
     }
 
     /* Estilos para la página de juegos */
+    .area-juego {
+        margin: 0 auto;
+        max-width: 770px;
+    }
+
+    .inicial {
+        max-width: 440px;
+    }
+
+    .intermedio {
+        max-width: 550px;
+    }
+
     .area-juego .card, .area-juego .card img {
-        width: 8vw;
-        height: 8vw;
+        width: 100px;
+        height: 100px;
     }
 
     .area-juego .card {
