@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: red;
+    background-color: #BBD979;
     margin: 56px 0 0 0;
     padding: 0;
     font-size: 18px;
@@ -12,11 +12,20 @@ body {
 }
 
 #contenedor {
-    background-color: aliceblue;
     width: 100%;
     max-width: 900px;
     margin: auto;
     padding: 1.5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-light, .btn-pregunta {
+    background-color: #F2778D;
+    border-color: #F2778D;
+    color: #4d1f23;
 }
 
 /* Estilos para el título y su fondo */
@@ -50,12 +59,13 @@ body {
 }
 
 /* Estilos para la barra de navegación y el footer */
-.navbar, .nav-item .dropdown-menu, footer {
-    background-color: brown !important;
+.bg-dark, .dropdown-item:hover, .btn-dark, .card, .noticiatitulo {
+    background-color: #592D2D !important;
+    color: #ffffff;
 }
 
-.navbar-brand, .nav-link, .dropdown-item, footer {
-    color: #FFFFFF;
+.dropdown-menu, .dropdown-center option:hover {
+    background-color: #994e4e;
 }
 
 .navbar-brand img {
@@ -69,12 +79,15 @@ footer {
     padding: 20px;
 }
 
-a {
-    text-decoration: none;
-}
-
 /* Estilos para la página de inicio */
 /* Tabla de noticias */
+.noticiatitulo {
+    text-align: center;
+    width: 130px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 .tabla-noticias {
     padding-left: 10px;
 }
@@ -130,7 +143,49 @@ a {
     scroll-margin-top: 80px; 
 }
 
+.noticias h6, form span {
+    color: #b38f8f;
+}
+
+table a:link, .card a:link{
+    color: #F2C6AC;
+}
+table a:visited, .card a:visited{ 
+    color: #F29580;
+}
+table a:hover, .card a:hover{
+    color: #F28972;
+}
+table a:active, .card a:active{
+    color: #F2778D;
+}
+
 /* Estilos para la página de obras */
+.modal-content, .btn-respuesta {
+    background-color: #62C3D9
+}
+
+.modal-header, .modal-footer {
+    border-color: #03738C;
+}
+
+.modal-header, .modal-body, .btn-respuesta {
+    color: #023f4d;
+}
+
+.modal-body a:link{
+    color: #025466;
+}
+.modal-body a:visited{ 
+    color: #2e4c66;
+}
+.modal-body a:hover{
+    color: #1F92BF;
+}
+.modal-body a:active{
+    color: #15A0BF;
+}
+
 .copyright,
 .ficha-tecnica {
     text-align: left;
@@ -148,7 +203,7 @@ a {
 
 span {
     font-size: 0.8em;
-    color: gray;
+    color: #3D403A;
 }
 
 .copyright {
@@ -189,122 +244,6 @@ iframe {
 
 .listaperfil ul, .listaperfildos ul {
     text-align: left;
-}
-
-/* Estilos para el timeline */
-.timeline {
-    border-left: 3px solid #727cf5;
-    border-bottom-right-radius: 4px;
-    border-top-right-radius: 4px;
-    background: rgba(114, 124, 245, 0.09);
-    margin: 0 auto;
-    letter-spacing: 0.2px;
-    position: relative;
-    line-height: 1.4em;
-    font-size: 1.03em;
-    padding: 50px;
-    list-style: none;
-    text-align: left;
-    max-width: 40%;
-}
-
-@media (max-width: 767px) {
-    .timeline {
-        max-width: 98%;
-        padding: 25px;
-    }
-}
-
-.timeline h1 {
-    font-weight: 300;
-    font-size: 1.4em;
-}
-
-.timeline h2,
-.timeline h3 {
-    font-weight: 600;
-    font-size: 1rem;
-    margin-bottom: 10px;
-}
-
-.timeline .event {
-    border-bottom: 1px dashed #e8ebf1;
-    padding-bottom: 25px;
-    margin-bottom: 25px;
-    position: relative;
-}
-
-@media (max-width: 767px) {
-    .timeline .event {
-        padding-top: 30px;
-    }
-}
-
-.timeline .event:last-of-type {
-    padding-bottom: 0;
-    margin-bottom: 0;
-    border: none;
-}
-
-.timeline .event:before,
-.timeline .event:after {
-    position: absolute;
-    display: block;
-    top: 0;
-}
-
-.timeline .event:before {
-    left: -207px;
-    content: attr(data-date);
-    text-align: right;
-    font-weight: 100;
-    font-size: 0.9em;
-    min-width: 120px;
-}
-
-@media (max-width: 767px) {
-    .timeline .event:before {
-        left: 0px;
-        text-align: left;
-    }
-}
-
-.timeline .event:after {
-    -webkit-box-shadow: 0 0 0 3px #727cf5;
-    box-shadow: 0 0 0 3px #727cf5;
-    left: -55.8px;
-    background: #fff;
-    border-radius: 50%;
-    height: 9px;
-    width: 9px;
-    content: "";
-    top: 5px;
-}
-
-@media (max-width: 767px) {
-    .timeline .event:after {
-        left: -31.8px;
-    }
-}
-
-.rtl .timeline {
-    border-left: 0;
-    text-align: right;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 4px;
-    border-top-left-radius: 4px;
-    border-right: 3px solid #727cf5;
-}
-
-.rtl .timeline .event::before {
-    left: 0;
-    right: -170px;
-}
-
-.rtl .timeline .event::after {
-    left: 0;
-    right: -55.8px;
 }
 
 /* Estilos para la página de juegos */

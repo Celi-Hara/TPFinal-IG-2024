@@ -17,7 +17,7 @@
 <body>
     <header>
         <!--Barra de navegación-->
-        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="img/home.png" alt="Ícono de la página"> Studio Ghibli</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -89,8 +89,8 @@
             <div id="contenedor">
                 <section>
                     <div class="contenedor-carousel">
-                        <form action="#" method="POST" class="formulario card p-3">
-                            <legend class="subtitulo">Envíenos su consulta</legend>
+                        <form action="#" method="POST" class="formulario card p-3 bg-dark text-white">
+                            <h4 class="subtitulo">Envíenos su consulta</h4>
                             <span>Todos los campos son requeridos</span>
                             <br>
                             <label for="nombre" class="etiqueta">Nombre:</label>
@@ -110,13 +110,13 @@
 
                             <!-- Link al cual redirecciona después de enviar el formulario -->
                             <input type="hidden" name="_next" value="gracias.html">
-                            <button type="submit" class="btn btn-primary boton-enviar">Enviar</button>
+                            <button type="submit" class="btn btn-light boton-enviar">Enviar</button>
                         </form>
                     </div>
                 </section>
                 <br>
             </div> <!--Cierra div contenedor-->
-            <footer>
+            <footer class="bg-dark text-white">
                 <address>
                     Página desarrollada por <a href="desarrollador.html">Celina Hara</a> para UNA Multimediales - IG
                     2024

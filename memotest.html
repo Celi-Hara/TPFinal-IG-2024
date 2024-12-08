@@ -17,7 +17,7 @@
 <body>
     <header>
         <!--Barra de navegación-->
-        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="img/home.png" alt="Ícono de la página"> Studio Ghibli</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -94,7 +94,7 @@
                             <p class="card-text collapse show" id="instrucciones">¡Pon a prueba tu memoria con este
                                 juego de memotest! En cada turno, elije dos cartas e intenta juntar a los mismos
                                 personajes. ¿En cuántos intentos y segundos puedes lograrlo?</p>
-                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                            <button class="btn btn-light" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#instrucciones" aria-expanded="false" aria-controls="instrucciones">
                                 Ocultar instrucciones
                             </button>
@@ -104,9 +104,9 @@
                 <section>
                     <br>
                     <div class="selector-nivel text-center">
-                        <button class="btn btn-primary m-1 nivel" id="inicial">Nivel Inicial</button><br>
-                        <button class="btn btn-primary m-1 nivel" id="intermedio">Nivel Intermedio</button><br>
-                        <button class="btn btn-primary m-1 nivel" id="avanzado">Nivel Avanzado</button>
+                        <button class="btn btn-dark m-1 nivel" id="inicial">Nivel Inicial</button><br>
+                        <button class="btn btn-dark m-1 nivel" id="intermedio">Nivel Intermedio</button><br>
+                        <button class="btn btn-dark m-1 nivel" id="avanzado">Nivel Avanzado</button>
                     </div>
 
                     <div class="area-juego">
@@ -115,13 +115,13 @@
                     	<br>
                     <div class="reinicio-juego text-center">
                         <p class="resultado-juego">¡Felicidades! Has conseguido encontrar todas las parejas en x segundos y x intentos</p>
-                        <button class="btn btn-primary m-1 reiniciar" id="reiniciar">Volver a jugar</button>
-                        <button class="btn btn-primary m-1 reiniciar" id="nuevonivel">Volver a elegir nivel</button>
+                        <button class="btn btn-dark m-1 reiniciar" id="reiniciar">Volver a jugar</button>
+                        <button class="btn btn-dark m-1 reiniciar" id="nuevonivel">Volver a elegir nivel</button>
                     </div>
                 </section>
                 <br>
             </div> <!--Cierra div contenedor-->
-            <footer>
+            <footer class="bg-dark text-white">
                 <address>
                     Página desarrollada por <a href="desarrollador.html">Celina Hara</a> para UNA Multimediales - IG
                     2024

@@ -17,9 +17,9 @@
 <body>
     <header>
         <!--Barra de navegación-->
-        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar fixed-top navbar-expand-lg bg-dark"  data-bs-theme="dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="img/home.png" alt="Ícono de la página"> Studio Ghibli</a>
+                <a class="navbar-brand" href="index.html"><img src="img/home.png" alt="Ícono de la página" class="d-inline-block align-text-top"> Studio Ghibli</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -95,7 +95,10 @@
                         </div>
                         <div class="carousel-item">
                             <a href="memotest.html">
-                                <img src="img/inicio/carousel-1.jpg" class="d-block w-100" alt="Imagen del juego de memotest">
+                                <img src="img/inicio/carousel-3-mobile.jpg" class="d-block d-md-none w-100"
+                                    alt="Imagen del juego de memotest"> <!--Imagen versión mobile-->
+                                <img src="img/inicio/carousel-3.jpg" class="d-none d-md-block w-100"
+                                    alt="Imagen del juego de memotest"> <!--Imagen versión desktop-->
                             </a>
                         </div>
                     </div>
@@ -114,30 +117,30 @@
 
             <div id="contenedor">
                 <section><!--Sección de noticias-->
-                    <h3>Noticias</h3>
-                        <table class="table table-borderless mx-auto rounded-3 overflow-hidden">
+                    <h3 class="noticiatitulo">Noticias</h3>
+                        <table class="table table-borderless no-gutter mx-auto rounded-3 overflow-hidden">
                             <tr class="row">
-                                <td class="col-12 col-md-2 px-4">30/09/2024</td>
-                                <td class="col-12 col-md-10 px-4 px-md-2 pb-4 pb-md-2"><a href="noticias.html#noticia1">Llega "Studio Ghibli Sinfónico" a Mendoza</a></td>
+                                <td class="col-12 col-md-2 px-4 bg-dark text-white">30/09/2024</td>
+                                <td class="col-12 col-md-10 px-4 px-md-2 pb-4 pb-md-2 bg-dark text-white"><a href="noticias.html#noticia1">Llega "Studio Ghibli Sinfónico" a Mendoza</a></td>
                             </tr>
                             <tr class="row">
-                                <td class="col-12 col-md-2 px-4">09/09/2024</td>
-                                <td class="col-12 col-md-10 px-4 px-md-2 pb-4 pb-md-2"><a href="noticias.html#noticia2">"El Niño y la Garza" llega a Netflix</a></td>
+                                <td class="col-12 col-md-2 px-4 bg-dark text-white">09/09/2024</td>
+                                <td class="col-12 col-md-10 px-4 px-md-2 pb-4 pb-md-2 bg-dark text-white"><a href="noticias.html#noticia2">"El Niño y la Garza" llega a Netflix</a></td>
                             </tr>
                             <tr class="row">
-                                <td class="col-12 col-md-2 px-4">03/09/2024</td>
-                                <td class="col-12 col-md-10 px-4 px-md-2 pb-4 pb-md-2"><a href="noticias.html#noticia3">Las películas del Studio Ghibli llegan a Vicente López</a></td>
+                                <td class="col-12 col-md-2 px-4 bg-dark text-white">03/09/2024</td>
+                                <td class="col-12 col-md-10 px-4 px-md-2 pb-4 pb-md-2 bg-dark text-white"><a href="noticias.html#noticia3">Las películas del Studio Ghibli llegan a Vicente López</a></td>
                             </tr>
                             <tr class="row">
-                                <td class="col-12 col-md-2 px-4">21/08/2024</td>
-                                <td class="col-12 col-md-10 px-4 px-md-2 pb-4 pb-md-2"><a href="noticias.html#noticia4">"La Tumba de las Luciérnagas" llega a Netflix</a></td>
+                                <td class="col-12 col-md-2 px-4 bg-dark text-white">21/08/2024</td>
+                                <td class="col-12 col-md-10 px-4 px-md-2 pb-4 pb-md-2 bg-dark text-white"><a href="noticias.html#noticia4">"La Tumba de las Luciérnagas" llega a Netflix</a></td>
                             </tr>
                             <tr class="row">
-                                <td class="col-12 col-md-2 px-4">17/04/2024</td>
-                                <td class="col-12 col-md-10 px-4 px-md-2 pb-4 pb-md-2"><a href="noticias.html#noticia5">El Estudio Ghibli será galardonado en el Festival de Cannes</a></td>
+                                <td class="col-12 col-md-2 px-4 bg-dark text-white">17/04/2024</td>
+                                <td class="col-12 col-md-10 px-4 px-md-2 pb-4 pb-md-2 bg-dark text-white"><a href="noticias.html#noticia5">El Estudio Ghibli será galardonado en el Festival de Cannes</a></td>
                             </tr>
                         </table>
-                    <a class="btn btn-primary" href="noticias.html" role="button">Ver más</a>
+                    <a class="btn btn-dark" href="noticias.html" role="button">Ver más</a>
                 </section>
 
                 <br>
@@ -223,7 +226,7 @@
                 </section>
                 <br>
             </div> <!--Cierra div contenedor-->
-            <footer>
+            <footer class="bg-dark text-white">
                 <address>
                     Página desarrollada por <a href="desarrollador.html">Celina Hara</a> para UNA Multimediales - IG 2024
                 </address>
